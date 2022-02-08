@@ -21,7 +21,7 @@ As the numerical weather prediction community seeks deeper understanding of mult
 TBD
 
 ## Code reference
-In NatureF2 branch:  https://code.ornl.gov/mrp/im3_ornl
+In NATURF2 branch:  https://code.ornl.gov/mrp/im3_ornl
 
 Ingests shapefiles and turns them into inputs for WRF.
 Generated both 10 and 100-meter morphologies.
@@ -42,14 +42,14 @@ NAR (North American Reanalysis Dataset) - Input to WRF.
 ### Output data
 Reference for each minted data source for your output data.  For example:
 
-Morphologies from NATUREF as inputs to WRF.  Swapped J. Ching inputs with NATUREF inputs.
+Morphologies from NATURF as inputs to WRF.  Swapped J. Ching inputs with NATURF inputs.
 
 Human, I.M. (2021). My output dataset name [Data set]. DataHub. https://doi.org/some-doi-number
 
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
-| NATUREF | version | link to code repository | link to DOI dataset |
+| NATURF | version | link to code repository | link to DOI dataset |
 | WRF | v4.1 | https://www2.mmm.ucar.edu/wrf/users/download/get_source.html | link to DOI dataset |
 
 ## Reproduce my experiment
