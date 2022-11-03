@@ -4,7 +4,7 @@ _your zenodo badge here_
 
 **Sensitivity of Mesoscale Modelling to the Resolution of Urban Morphological Feature Inputs**
 
-Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup>, Christa M. Brelsford<sup>2</sup>, Joshua R. New<sup>3</sup>
+Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup>, Christa M. Brelsford<sup>2</sup>, Joshua R. New<sup>3</sup>, Brett C. Bass<sup>3</sup>
 
 <sup>1 </sup> Computational Sciences and Engineering Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN. 37831
 
