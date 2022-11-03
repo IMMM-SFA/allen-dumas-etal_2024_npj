@@ -1,6 +1,6 @@
 _your zenodo badge here_
 
-# allen-dumas-etal_2021_urbsust
+# allen-dumas-etal_2021_urbclim
 
 **Sensitivity of Mesoscale Modelling to the Resolution of Urban Morphological Feature Inputs**
 
