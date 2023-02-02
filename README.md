@@ -79,9 +79,8 @@ Use the scripts found in the `figures` directory to reproduce the figures used i
 | --- | --- |
 | `Daymet_and_Arboretum.R` | Create variables for historical data |
 | `Point_Data.R` | Create figures for point observations at DCA and Arboretum |
-| `Spatial_Averages_Avg.R` | Create spatially-averaged figures for average values across domain |
-| `Spatial_Averages_Max.R` | Create spatially-averaged figures for maximum values across domain |
-| `Spatial_Averages_Min.R` | Create spatially-averaged figures for minimum values across domain |
-| `Spatial_Averages_Wind.R` | Create spatially-averaged figures for wind roses across domain |
-| `Time_Averages.py` | List of tools used to create time-averaged figures |
+| `PBLH.R` | Create spatially-averaged figures for PBLH values across domain |
+| `WDC_Nature_Stats.R` | Generate summary statistics, histograms, and Mann Whitney U Tests for time-averaged variables |
+| `Spatial_Averages_Wind.R` | Create variables for historical wind data |
+| `maxmin.py` | Create time-averaged humidity data |
 | `wd.py` | Calculate spatially-averaged wind direction in conjunction with other scripts |
