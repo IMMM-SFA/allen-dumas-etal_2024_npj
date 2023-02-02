@@ -184,7 +184,7 @@ DCA.dates <- as.POSIXct(DCA.dates, format ="%Y%m%dT%H%M", tz = "America/New_York
 
 wind.DCA <- data.frame(DCA.dates, ws.DCA.total.ms, wd.DCA.total)
 wind.DCA <- rename(wind.DCA, date=DCA.dates, ws=ws.DCA.total.ms,wd=wd.DCA.total)
-w.DCA <- pollutionRose(wind.DCA, pollutant = "ws", main="DCA", breaks = seq(0,8, by = 1))
+w.DCA <- pollutionRose(wind.DCA, pollutant = "ws", breaks = seq(0,8, by = 1))
 
 windows()
 print(w.t, split=c(1,1,2,2))
