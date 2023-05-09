@@ -16,3 +16,8 @@ For the daily-averaged humidity data:
 * Use epvars.water2015d03.csv.ncl to output a CSV file with the relative humidity for each grid cell
 * In Excel, find the daily maximum, average, and minimum relative humidities.
 * Use the Daymet_and_Aboretum.R script to find historic values for Arboretum, and the Point_Data.R script to make the line plots
+
+## Figure 4
+* Use ncks to extract the U10 and V10 variables from the total netCDF file at the DCA grid cell and ncra to average those variables over each hour
+* Use ncrcat to contacenate the resulting files
+* Use Point_Data.R and wd.py to make the wind roses for the modeled observations, and use Spatial_Averages_Wind.R for the historical observations
