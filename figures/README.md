@@ -21,10 +21,11 @@ For the daily-averaged humidity data:
 * Use ncrcat to contacenate the resulting files
 * Use Point_Data.R and wd.py to make the wind roses for the modeled observations, and use Spatial_Averages_Wind.R for the historical observations
 
-## Figure 5
+## Figure 5-7
 * See instructions for table 1 to get the time-averaged netCDF files
 * In Arc, use the Make NetCDF Table View tool (extracting T2, XLONG, and XLAT as columns, south_north and west_east as rows) and then the XY Event Layer tool to turn the table into a point layer
 * Then use the IDW tool to get a raster for the domain. If the data is in Kelvin, convert it to Fahrenheit using Raster Calculator
+* For figure 6, clip the raster to the Waterfront neighborhood
 * Symbolize the plots according to their combined ranges
 
 ## Table 1
