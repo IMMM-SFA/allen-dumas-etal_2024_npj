@@ -21,3 +21,7 @@ For the daily-averaged humidity data:
 * Use ncks to extract the U10 and V10 variables from the total netCDF file at the DCA grid cell and ncra to average those variables over each hour
 * Use ncrcat to contacenate the resulting files
 * Use Point_Data.R and wd.py to make the wind roses for the modeled observations, and use Spatial_Averages_Wind.R for the historical observations
+
+## Table 1
+* Use ncks and ncra (-y max/min) to get time-averaged values for each grid cell and variable
+* Use WDC_Nature_Stats.R to produce the table
