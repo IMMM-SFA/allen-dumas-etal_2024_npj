@@ -27,11 +27,15 @@ For the daily-averaged humidity data:
 ## Figures 5-7
 * See instructions for table 1 to get the time-averaged netCDF files
 * In Arc, use the Make NetCDF Table View tool (extracting T2, XLONG, and XLAT as columns, south_north and west_east as rows) and then the XY Event Layer tool to turn the table into a point layer
-* Then use the IDW tool to get a raster for the domain. If the data is in Kelvin, convert it to Fahrenheit using Raster Calculator
+* Then use the IDW tool to get a raster for the domain. If the data is in Kelvin, convert it to Fahrenheit using Raster Calculator and bias-correct
 * For figure 6, clip the raster to the Waterfront neighborhood
 * Symbolize the plots according to their combined ranges
 
 ## Figures 8-9
+* Use ncks to extract the temperature data and variables for relative humidity (see figure 3) for July 6th 5:00 a.m. and July 7th 10:00 p.m.
+* Use epvars.water2015d03.csv.ncl to create a CSV with relative humidity data
+* In Arc, bias-correct the temperature data using Raster Calculator and apply the formulas from the [National Weather Service](https://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml) to calculate the heat index
+* Use Zonal Statistics to aggregate the heat index and temperature rasters into their respective census tracts and then output as CSVs
 
 ## Table 1
 * Use ncks and ncra (-y max/min) to get time-averaged values for each grid cell and variable
