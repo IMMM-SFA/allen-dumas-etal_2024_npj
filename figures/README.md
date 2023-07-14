@@ -6,7 +6,7 @@ The majority of figures were created using the output netCDF files from WRF. The
 ## Bias Correction
 To adjust the temperature data in response to WRF's cold bias, linear regressions were run on the daily-averaged average temperature for each point location of the DC Airport (DCA) and the National Arboretum against observed values. The coefficients for all eight regressions were averaged and then applied to the data to get bias-corrected temperature.
 
-## Figure 3
+## Figure 2
 For the daily-averaged temperature data:
 * Extract the temperature and time variable from the total netCDF file at the National Arboretum and DCA (ncks -d south_north,67,67 -d west_east,74,74 -v T2,Times for Arboretum; ncks -d south_north,41,41 -d west_east,54,54 -v T2,Times for DCA) 
 * Find the daily maximum, minimum, and average value for each cell (ncra (-y max/min) -d Time,0,23) and each day. The timesteps will change depending on which day and the timestep of the input file
@@ -19,19 +19,14 @@ For the daily-averaged humidity data:
 * In Excel, find the daily maximum, average, and minimum relative humidities.
 * Use the Daymet_and_Aboretum.R script to find historic values for Arboretum, and the Point_Data.R script to make the line plots
 
-## Figure 4
-* Use ncks to extract the U10 and V10 variables from the total netCDF file at the DCA grid cell and ncra to average those variables over each hour
-* Use ncrcat to contacenate the resulting files
-* Use Point_Data.R and wd.py to make the wind roses for the modeled observations, and use Spatial_Averages_Wind.R for the historical observations
-
-## Figures 5-7
+## Figures 3-5
 * See instructions for table 1 to get the time-averaged netCDF files
 * In Arc, use the Make NetCDF Table View tool (extracting T2, XLONG, and XLAT as columns, south_north and west_east as rows) and then the XY Event Layer tool to turn the table into a point layer
 * Then use the IDW tool to get a raster for the domain. If the data is in Kelvin, convert it to Fahrenheit using Raster Calculator and bias-correct
-* For figure 6, clip the raster to the Waterfront neighborhood
+* For figure 4, clip the raster to the Waterfront neighborhood
 * Symbolize the plots according to their combined ranges
 
-## Figures 8-9
+## Figures 6 and 8
 * Use ncks to extract the temperature data and variables for relative humidity (see figure 3) for July 6th 5:00 a.m. and July 7th 10:00 p.m.
 * Use epvars.water2015d03.csv.ncl to create a CSV with relative humidity data
 * In Arc, bias-correct the temperature data using Raster Calculator and apply the formulas from the [National Weather Service](https://www.wpc.ncep.noaa.gov/html/heatindex_equation.shtml) to calculate the heat index
@@ -39,4 +34,7 @@ For the daily-averaged humidity data:
 
 ## Table 1
 * Use ncks and ncra (-y max/min) to get time-averaged values for each grid cell and variable
-* Use WDC_Nature_Stats.R to produce the table
+* Use WDC_Nature_Stats.R to produce the data for the table
+
+## Table 2
+* See instructions for figures 6 and 8.
