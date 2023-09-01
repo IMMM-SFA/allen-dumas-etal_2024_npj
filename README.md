@@ -23,7 +23,7 @@ As researchers seek to understand the urban-scale impacts of future climate chan
 TBD
 
 ## Code reference
-In NATURF2 branch:  https://code.ornl.gov/mrp/im3_ornl
+In main branch:  https://github.com/IMMM-SFA/naturf/tree/main
 
 Ingests shapefiles and turns them into inputs for WRF.
 Generated both 10 and 100-meter morphologies.
