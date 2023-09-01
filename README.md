@@ -37,7 +37,7 @@ Reference for each minted data source for your input data.  For example:
 For morphologies, inputs are only shapefiles.
 - Get citations from authors
 
-NAR (North American Reanalysis Dataset) - Input to WRF.
+NARR (North American Reanalysis Dataset) - Input to WRF.
 - Need citations
 
 
@@ -51,7 +51,7 @@ Human, I.M. (2021). My output dataset name [Data set]. DataHub. https://doi.org/
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
-| NATURF | version | link to code repository | link to DOI dataset |
+| NATURF | v0.0.0 | https://github.com/IMMM-SFA/naturf/tree/main | link to DOI dataset |
 | WRF | v4.1 | https://www2.mmm.ucar.edu/wrf/users/download/get_source.html | link to DOI dataset |
 
 ## Reproduce my experiment
