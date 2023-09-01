@@ -4,13 +4,15 @@ _your zenodo badge here_
 
 **Sensitivity of Mesoscale Modeling to the Resolution of Urban Morphological Feature Inputs: Implications for Characterizing Urban Sustainability**
 
-Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup>, Christa M. Brelsford<sup>2</sup>, Joshua R. New<sup>3</sup>, Brett C. Bass<sup>3</sup>
+Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup>, Christa M. Brelsford<sup>2</sup>, Linying Wang<sup>3</sup>, Joshua R. New<sup>3</sup>, Brett C. Bass<sup>3</sup>
 
-<sup>1 </sup> Computational Sciences and Engineering Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN. 37831
+<sup>1 </sup> Computational Sciences and Engineering Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
 
-<sup>2 </sup> Geospatial Science and Human Security Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN 37831
+<sup>2 </sup> Geospatial Science and Human Security Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
 
-<sup>3 </sup> Electrification and Energy Infrastructure Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN 37831
+<sup>3 </sup> Arts and Sciences, Earth and Environment, Boston University, 685 Commonwealth Avenue, Boston, MA, 02215, USA.
+
+<sup>4 </sup> Electrification and Energy Infrastructure Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
 
 \* corresponding author:  allenmr (at) ornl.gov
 
