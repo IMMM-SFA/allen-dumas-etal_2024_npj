@@ -2,7 +2,7 @@ _your zenodo badge here_
 
 # allen-dumas-etal_2023_urbansust
 
-**Sensitivity of Mesoscale Modelling to the Resolution of Urban Morphological Feature Inputs**
+**Sensitivity of Mesoscale Modeling to the Resolution of Urban Morphological Feature Inputs: Implications for Characterizing Urban Sustainability**
 
 Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup>, Christa M. Brelsford<sup>2</sup>, Joshua R. New<sup>3</sup>, Brett C. Bass<sup>3</sup>
 
