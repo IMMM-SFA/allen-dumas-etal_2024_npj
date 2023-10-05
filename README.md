@@ -46,7 +46,7 @@ Reference for each minted data source for your output data.  For example:
 
 Morphologies from NATURF as inputs to WRF.  Swapped J. Ching inputs with NATURF inputs.
 
-Human, I.M. (2021). My output dataset name [Data set]. DataHub. https://doi.org/some-doi-number
+Allen-Dumas, M. (2023). WRF Output from 270m domain running simulation with no 3D morphology, NUDAPT 3D morphology, 100m resolution 3D morphology and 10m resolution 3D morphology (Version v2) [Data set]. MSD-LIVE Data Repository. https://doi.org/10.57931/2001265
 
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
