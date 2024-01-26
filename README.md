@@ -4,15 +4,17 @@ _your zenodo badge here_
 
 **Sensitivity of Mesoscale Modeling to the Resolution of Urban Morphological Feature Inputs: Implications for Characterizing Urban Sustainability**
 
-Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup>, Christa M. Brelsford<sup>2</sup>, Linying Wang<sup>3</sup>, Joshua R. New<sup>3</sup>, Brett C. Bass<sup>3</sup>
+Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1</sup><sup>2</sup>, Christa M. Brelsford<sup>3</sup>, Linying Wang<sup>4</sup>, Joshua R. New<sup>5</sup>, Brett C. Bass<sup>5</sup>
 
 <sup>1 </sup> Computational Sciences and Engineering Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
 
-<sup>2 </sup> Geospatial Science and Human Security Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
+<sup>2 </sup> Department of Environmental Science, Baylor University, Waco, TX, 76798, USA.
 
-<sup>3 </sup> Arts and Sciences, Earth and Environment, Boston University, 685 Commonwealth Avenue, Boston, MA, 02215, USA.
+<sup>3 </sup> Geospatial Science and Human Security Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
 
-<sup>4 </sup> Electrification and Energy Infrastructure Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
+<sup>4 </sup> Arts and Sciences, Earth and Environment, Boston University, 685 Commonwealth Avenue, Boston, MA, 02215, USA.
+
+<sup>5 </sup> Electrification and Energy Infrastructure Division, Oak Ridge National Laboratory, OneBethel Valley Road, Oak Ridge, TN, 37831, USA.
 
 \* corresponding author:  allenmr (at) ornl.gov
 
@@ -32,7 +34,6 @@ Generated both 10 and 100-meter morphologies.
 ## Data reference
 
 ### Input data
-Reference for each minted data source for your input data.  For example:
 
 For morphologies, inputs are only shapefiles.
 - Get citations from authors
@@ -42,7 +43,6 @@ NARR (North American Reanalysis Dataset) - Input to WRF.
 
 
 ### Output data
-Reference for each minted data source for your output data.  For example:
 
 Morphologies from NATURF as inputs to WRF.  Swapped J. Ching inputs with NATURF inputs.
 
@@ -51,38 +51,21 @@ Allen-Dumas, M. (2023). WRF Output from 270m domain running simulation with no 3
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
 |-------|---------|-----------------|-----|
-| NATURF | v0.0.0 | https://github.com/IMMM-SFA/naturf/tree/main | link to DOI dataset |
-| WRF | v4.1 | https://www2.mmm.ucar.edu/wrf/users/download/get_source.html | link to DOI dataset |
+| NATURF | v0.0.0 | https://github.com/IMMM-SFA/naturf/tree/main | https://doi.org/10.11578/dc.20220803.4 |
+| WRF | v4.1 | https://www2.mmm.ucar.edu/wrf/users/download/get_source.html | https://opensky.ucar.edu/islandora/object/opensky:2898 |
 
 ## Reproduce my experiment
-Fill in detailed info here or link to other documentation that is a thorough walkthrough of how to use what is in this repository to reproduce your experiment.
-
-
-1. Install the software components required to conduct the experiement from [Contributing modeling software](#contributing-modeling-software)
-2. Download and install the supporting input data required to conduct the experiement from [Input data](#input-data)
-3. Run the following scripts in the `workflow` directory to re-create this experiment:
-
-| Script Name | Description | How to Run |
-| --- | --- | --- |
-| `step_one.py` | Script to run the first part of my experiment | `python3 step_one.py -f /path/to/inputdata/file_one.csv` |
-| `step_two.py` | Script to run the last part of my experiment | `python3 step_two.py -o /path/to/my/outputdir` |
-
-4. Download and unzip the output data from my experiment [Output data](#output-data)
-5. Run the following scripts in the `workflow` directory to compare my outputs to those from the publication
-
-| Script Name | Description | How to Run |
-| --- | --- | --- |
-| `compare.py` | Script to compare my outputs to the original | `python3 compare.py --orig /path/to/original/data.csv --new /path/to/new/data.csv` |
+NATURF v0.0.0 was used to calculate the urban parameters fed to WRF for this experiment. Documentation for NATURF can be found on [GitHub](https://github.com/IMMM-SFA/naturf/tree/main) or its [website](https://immm-sfa.github.io/naturf/).
 
 ## Reproduce my figures
 Use the scripts found in the `figures` directory to reproduce the figures used in this publication.
 
 | Script Name | Description |
 | --- | --- |
-| `Daymet_and_Arboretum.R` | Create variables for historical data |
-| `Point_Data.R` | Create figures for point observations at DCA and Arboretum |
+| `bias.R` | Create figures for model bias |
+| `pointcomparison.R` | Create figures for point observations at DCA and Arboretum |
 | `PBLH.R` | Create spatially-averaged figures for PBLH values across domain |
-| `WDC_Nature_Stats.R` | Generate summary statistics, histograms, and Mann Whitney U Tests for time-averaged variables |
-| `Spatial_Averages_Wind.R` | Create variables for historical wind data |
-| `maxmin.py` | Create time-averaged humidity data |
-| `wd.py` | Calculate spatially-averaged wind direction in conjunction with other scripts |
+| `summarystats.R` | Generate summary statistics, histograms, and Mann Whitney U Tests for time-averaged variables |
+| `windroses.R` | Create figures wind data |
+| `RH.R` | Create time-averaged humidity data |
+| `HI.R` | Create files for heat index figures |
