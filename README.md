@@ -39,7 +39,13 @@ For morphologies, inputs are only shapefiles.
 - Get citations from authors
 
 NARR (North American Reanalysis Dataset) - Input to WRF.
-- Need citations
+- Mesinger F, DiMego G, Kalnay E, et al (2006) North American Regional
+Reanalysis. Bulletin of the American Meteorological Society 87(3):343–360
+
+NUDAPT
+- Ching J, Brown M, Burian S, et al (2009) National Urban Database and Access
+Portal Tool. Bulletin of the American Meteorological Society 90(8):1157–
+1168
 
 
 ### Output data
