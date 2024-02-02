@@ -2,44 +2,44 @@ library(ncdf4)
 library(ggplot2)
 library(ggpubr)
 
-setwd("C:/Users/levis/OneDrive/Desktop/WDC_Nature")
+setwd("D:/Out")
 
 days <- c(1:10)
 
-PBLH.mx.t <- nc_open("NetCDF/sp_PBLH/sp.PBLH_mx_2010-07-01-10_10m.nc")
+PBLH.mx.t <- nc_open("10MeterOut/sp.PBLH_mx_2010-07-01-10_10m.nc")
 PBLH.mx.t <- ncvar_get(PBLH.mx.t, "PBLH")
 
-PBLH.mx.h <- nc_open("NetCDF/sp_PBLH/sp.PBLH_mx_2010-07-01-10_100m.nc")
+PBLH.mx.h <- nc_open("100MeterOut/sp.PBLH_mx_2010-07-01-10_100m.nc")
 PBLH.mx.h <- ncvar_get(PBLH.mx.h, "PBLH")
 
-PBLH.mx.nudapt <- nc_open("NetCDF_new/NUDAPT_NetCDF/PBLH_nudapt/sp.PBLH_mx_2010-07-01-10_nudapt.nc")
+PBLH.mx.nudapt <- nc_open("NUDAPTOut/sp.PBLH_mx_2010-07-01-10_nudapt.nc")
 PBLH.mx.nudapt <- ncvar_get(PBLH.mx.nudapt, "PBLH")
 
-PBLH.mx.nobldg <- nc_open("NetCDF_new/No_Buildings_NetCDF/PBLH_nobldg/sp.PBLH_mx_2010-07-01-10_nobldg.nc")
+PBLH.mx.nobldg <- nc_open("NoBldgOut/sp.PBLH_mx_2010-07-01-10_nobldg.nc")
 PBLH.mx.nobldg <- ncvar_get(PBLH.mx.nobldg, "PBLH")
 
-PBLH.av.t <- nc_open("NetCDF/sp_PBLH/sp.PBLH_av_2010-07-01-10_10m.nc")
+PBLH.av.t <- nc_open("10MeterOut/sp.PBLH_av_2010-07-01-10_10m.nc")
 PBLH.av.t <- ncvar_get(PBLH.av.t, "PBLH")
 
-PBLH.av.h <- nc_open("NetCDF/sp_PBLH/sp.PBLH_av_2010-07-01-10_100m.nc")
+PBLH.av.h <- nc_open("100MeterOut/sp.PBLH_av_2010-07-01-10_100m.nc")
 PBLH.av.h <- ncvar_get(PBLH.av.h, "PBLH")
 
-PBLH.av.nudapt <- nc_open("NetCDF_new/NUDAPT_NetCDF/PBLH_nudapt/sp.PBLH_av_2010-07-01-10_nudapt.nc")
+PBLH.av.nudapt <- nc_open("NUDAPTOut/sp.PBLH_av_2010-07-01-10_nudapt.nc")
 PBLH.av.nudapt <- ncvar_get(PBLH.av.nudapt, "PBLH")
 
-PBLH.av.nobldg <- nc_open("NetCDF_new/No_Buildings_NetCDF/PBLH_nobldg/sp.PBLH_av_2010-07-01-10_nobldg.nc")
+PBLH.av.nobldg <- nc_open("NoBldgOut/sp.PBLH_av_2010-07-01-10_nobldg.nc")
 PBLH.av.nobldg <- ncvar_get(PBLH.av.nobldg, "PBLH")
 
-PBLH.mn.t <- nc_open("NetCDF/sp_PBLH/sp.PBLH_mn_2010-07-01-10_10m.nc")
+PBLH.mn.t <- nc_open("10MeterOut/sp.PBLH_mn_2010-07-01-10_10m.nc")
 PBLH.mn.t <- ncvar_get(PBLH.mn.t, "PBLH")
 
-PBLH.mn.h <- nc_open("NetCDF/sp_PBLH/sp.PBLH_mn_2010-07-01-10_100m.nc")
+PBLH.mn.h <- nc_open("100MeterOut/sp.PBLH_mn_2010-07-01-10_100m.nc")
 PBLH.mn.h <- ncvar_get(PBLH.mn.h, "PBLH")
 
-PBLH.mn.nudapt <- nc_open("NetCDF_new/NUDAPT_NetCDF/PBLH_nudapt/sp.PBLH_mn_2010-07-01-10_nudapt.nc")
+PBLH.mn.nudapt <- nc_open("NUDAPTOut/sp.PBLH_mn_2010-07-01-10_nudapt.nc")
 PBLH.mn.nudapt <- ncvar_get(PBLH.mn.nudapt, "PBLH")
 
-PBLH.mn.nobldg <- nc_open("NetCDF_new/No_Buildings_NetCDF/PBLH_nobldg/sp.PBLH_mn_2010-07-01-10_nobldg.nc")
+PBLH.mn.nobldg <- nc_open("NoBldgOut/sp.PBLH_mn_2010-07-01-10_nobldg.nc")
 PBLH.mn.nobldg <- ncvar_get(PBLH.mn.nobldg, "PBLH")
 
 df.mx <- data.frame(days, PBLH.mx.t, PBLH.mx.h, PBLH.mx.nudapt, PBLH.mx.nobldg)
@@ -55,7 +55,8 @@ Pmax <- ggplot(df.mx, aes(x=days)) +
   geom_line(aes(y=PBLH.mx.nobldg), color="gray", size = 1.5) +
   labs(x = "Days", y = "Atmospheric Boundary Layer Thickness (m)") +
   scale_x_continuous(breaks=seq(1,10, by = 1)) +
-  theme_bw()
+  theme_bw() +
+  theme(axis.title=element_text(size=16), axis.text=element_text(size=12), legend.title=element_text(size=12), legend.text=element_text(size=12))
 
 Pav <- ggplot(df.av, aes(x=days)) +
   geom_line(aes(y=PBLH.av.t), color="darkred", size = 1.5) +
@@ -64,7 +65,8 @@ Pav <- ggplot(df.av, aes(x=days)) +
   geom_line(aes(y=PBLH.av.nobldg), color="gray", size = 1.5) +
   labs(x = "Days", y = "Atmospheric Boundary Layer Thickness (m)") +
   scale_x_continuous(breaks=seq(1,10, by = 1)) +
-  theme_bw()
+  theme_bw() +
+  theme(axis.title=element_text(size=16), axis.text=element_text(size=12), legend.title=element_text(size=12), legend.text=element_text(size=12))
 
 Pmin <- ggplot(df.mn, aes(x=days)) +
   geom_line(aes(y=PBLH.mn.t), color="darkred", size = 1.5) +
@@ -73,7 +75,8 @@ Pmin <- ggplot(df.mn, aes(x=days)) +
   geom_line(aes(y=PBLH.mn.nobldg), color="gray", size = 1.5) +
   labs(x = "Days", y = "Atmospheric Boundary Layer Thickness (m)") +
   scale_x_continuous(breaks=seq(1,10, by = 1)) +
-  theme_bw()
+  theme_bw() + 
+  theme(axis.title=element_text(size=16), axis.text=element_text(size=12), legend.title=element_text(size=12), legend.text=element_text(size=12))
 
 Plegend <- ggplot(df.mn, aes(x = days)) +
   geom_line(aes(y = PBLH.mn.t, color = "10 Meter"), size = 1.5) +
