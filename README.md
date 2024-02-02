@@ -36,7 +36,7 @@ Generated both 10 and 100-meter morphologies.
 ### Input data
 
 For morphologies, inputs are only shapefiles.
-- Get citations from authors
+- OpenDataDC (2021) Open Data DC. URL https://opendata.dc.gov/datasets
 
 NARR (North American Reanalysis Dataset) - Input to WRF.
 - Mesinger F, DiMego G, Kalnay E, et al (2006) North American Regional
@@ -52,7 +52,7 @@ Portal Tool. Bulletin of the American Meteorological Society 90(8):1157–
 
 Morphologies from NATURF as inputs to WRF.  Swapped J. Ching inputs with NATURF inputs.
 
-Allen-Dumas, M. (2023). WRF Output from 270m domain running simulation with no 3D morphology, NUDAPT 3D morphology, 100m resolution 3D morphology and 10m resolution 3D morphology (Version v2) [Data set]. MSD-LIVE Data Repository. https://doi.org/10.57931/2001265
+Allen-Dumas, M. (2024). WRF Output from 270m domain running simulation with no 3D morphology, NUDAPT 3D morphology, 100m resolution 3D morphology and 10m resolution 3D morphology (Version v3) [Data set]. MSD-LIVE Data Repository. https://doi.org/10.57931/2283554
 
 ## Contributing modeling software
 | Model | Version | Repository Link | DOI |
