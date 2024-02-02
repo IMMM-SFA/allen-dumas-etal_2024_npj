@@ -1,6 +1,6 @@
 _your zenodo badge here_
 
-# allen-dumas-etal_2023_urbansust
+# allen-dumas-etal_2024_urbansust
 
 **Sensitivity of Mesoscale Modeling to the Resolution of Urban Morphological Feature Inputs: Implications for Characterizing Urban Sustainability**
 
