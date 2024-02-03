@@ -49,7 +49,7 @@ ncra -y min inputfile.nc outputfile_min.nc
 ```
 
 ### Spatial-Averaging
-For figures that show the hourly or daily average, minimum, and/or maximum value across all grid cells (Figs 2, 4-5, Table 2, SI Figs A6-A8, SI Tables A4-A5), several different scripts can be used: epvars.water2015d03.csv.ncl and the various bash scripts. The bash scripts will use `ncra` to average across timesteps, producing hourly or daily files that can then be concatenated. The ncl script is used to calculate relative humidity and/or wind speed, and can be modified depending on how many grid cells or time steps are needed for a given figure. Note: For maximum and minimum relative humidity plots, either time- or spatially-averaged, the ncl script should be used to calculate relative humidity at 15 minute time steps to get more accurate results.
+For figures that show the hourly or daily average, minimum, and/or maximum value across all grid cells (Figs 2, 4-5, Table 2, SI Figs A5-A8, SI Tables A4-A5), several different scripts can be used: epvars.water2015d03.csv.ncl and the various bash scripts. The bash scripts will use `ncra` to average across timesteps, producing hourly or daily files that can then be concatenated. The ncl script is used to calculate relative humidity and/or wind speed, and can be modified depending on how many grid cells or time steps are needed for a given figure. Note: For maximum and minimum relative humidity plots, either time- or spatially-averaged, the ncl script should be used to calculate relative humidity at 15 minute time steps to get more accurate results.
 
 SI Fig A6 requires one additional step which is the use of `ncwa` to get one value for each day.
 
@@ -61,3 +61,22 @@ ncwa -O -a south_north,west_east inputfile.nc outputfile.nc
 All line plots, tables, and wind roses were created using the R scripts included in this directory. `bias.R` is used for SI Fig A7 and SI Table A5. `HI_socio.R` uses the files found in the "socio_data" directory to create Fig 4-5, Table 2, SI Figs A7-A8, and SI Table A4.  `HI.R` is used for figures 4-5, Table 2, SI Figs A7-A8, and SI Table A4. `PBLH.R` is used for SI Fig A6. `pointcomparison.R` is used for Fig 2. `RH.R` is used to create average, maximum, and minimum relative humidity values by grid cell. `summarystats.R` is used for Table 1 and SI Table A2. `windroses.R` is used for SI Fig A5. 
 
 The spatial figures (Fig 3, SI Figs A2-A4) were created in ArcGis Pro. CSVs and netCDF files from the netCDF file preparation were converted to point layers, and then the IDW tool was used to create rasters. Raster calculator was used to convert from Kelvin to Fahrenheit if necessary, and symbologies were created and shared between each set of figures.
+
+| Figure/Table | NetCDF Preparation | Script|
+| --- | --- | --- |
+| Figure 2 | Point location extraction & spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `dailyextract.sh`, `pointcomparison.R` |
+| 3 | Time-averaging | ArcGIS |
+| 4 | Spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `HI_socio.R`, `HI.R` |
+| 5 | Spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `HI_socio.R`, `HI.R` |
+| Table 1 | Time-averaging | `epvars.water2015d03.csv.ncl`, `summarystats.R` | 
+| 2 | Spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `HI_socio.R`, `HI.R`|
+| SI Figure A2 | Time-averaging | ArcGIS |
+|  A3 | Time-averaging | ArcGIS |
+|  A4 | Time-averaging | `epvars.water2015d03.csv.ncl`, ArcGIS |
+|  A5 | Point location extraction & spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `windroses.R` |
+|  A6 | Spatial-averaging | `PBLH_15.sh`, `PBLH.R` |
+|  A7 | Spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `bias.R` |
+|  A8 | Spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `HI_socio.R`, `HI.R` |
+| SI Table A2 | Time-averaging | `epvars.water2015d03.csv.ncl`, `summarystats.R` |
+| A4 | Spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `HI_socio.R`, `HI.R`|
+| A5 | Point location extraction & spatial-averaging | `epvars.water2015d03.csv.ncl`, `hourlyextract.sh`, `bias.R`|
