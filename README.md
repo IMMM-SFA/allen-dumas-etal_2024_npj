@@ -1,6 +1,6 @@
 _your zenodo badge here_
 
-# allen-dumas-etal_2024_urbansust
+# allen-dumas-etal_2024_npj
 
 **Sensitivity of mesoscale modeling to urban morphological feature inputs and implications for characterizing urban sustainability**
 
