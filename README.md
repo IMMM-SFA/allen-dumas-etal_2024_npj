@@ -2,7 +2,7 @@ _your zenodo badge here_
 
 # allen-dumas-etal_2024_urbansust
 
-**Sensitivity of Mesoscale Modeling to the Resolution of Urban Morphological Feature Inputs: Implications for Characterizing Urban Sustainability**
+**Sensitivity of mesoscale modeling to urban morphological feature inputs and implications for characterizing urban sustainability**
 
 Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1,2</sup>, Christa M. Brelsford<sup>3</sup>, Linying Wang<sup>4</sup>, Joshua R. New<sup>5</sup>, Brett C. Bass<sup>5</sup>
 
@@ -19,13 +19,13 @@ Melissa R. Allen-Dumas<sup>1\*</sup>, Levi T. Sweet-Breu<sup>1,2</sup>, Christa 
 \* corresponding author:  allenmr (at) ornl.gov
 
 ## Abstract
-As researchers seek to understand the urban-scale impacts of future climate change, the numerical weather prediction community is challenged with modeling multi-scale interactions among the atmosphere, human systems and the overall earth system within model simulations using physics-based mathematical representations of meteorological processes. High resolution representation of buildings in particular within these models have been used to provide turbulence-inducing impediments to air flow along with differences in diurnal shading of various structures within urban areas. For questions around neighborhood level urban sustainability under the most extreme climate change scenarios, especially for neighborhoods with compound vulnerabilities, more explicit representation of surface terrain in these models has become necessary. While a great body of work has examined the differences in error and uncertainty of simulations at various horizontal grid resolutions, no studies have been performed that compare the results of running the models at the same horizontal grid resolution but with different resolutions of embedded urban neighborhood morphology. We examine the differences in meteorological output from the Weather Research and Forecasting (WRF) model run at 270m horizontal resolution using 10m, 100m and 1 km resolution neighborhood morphological inputs and with no morphological inputs. We find that horizontal resolution differences in urban morphological inputs to numerical weather models result in model output differences, especially in the spatial variability of meteorological parameters. \We show that these results affect how we determine the spatial heterogeneity of human vulnerability to a heat wave across an urban area.
+We examine the differences in meteorological output from the Weather Research and Forecasting (WRF) model run at 270 m horizontal resolution using 10 m, 100 m and 1 km resolution 3D neighborhood morphological inputs and with no morphological inputs. We find that the spatial variability in temperature, humidity, and other meteorological variables across the city can vary with the resolution and the coverage of the 3D urban morphological input, and that larger differences occur between simulations run without 3D morphological input and those run with some type of 3D morphology. We also find that the inclusion of input-building-defined roughness length calculations would improve simulation results further. We show that these inputs produce different patterns of heat wave spatial heterogeneity across the city of Washington, DC. These findings suggest that understanding neighborhood level urban sustainability under extreme heat waves, especially for vulnerable neighborhoods, requires attention to the representation of surface terrain in numerical weather models.
 
 ## Journal reference
-TBD
+Allen-Dumas, M.R., Sweet-Breu, L.T., Brelsford, C.M. et al. Sensitivity of mesoscale modeling to urban morphological feature inputs and implications for characterizing urban sustainability. npj Urban Sustain 4, 49 (2024). https://doi.org/10.1038/s42949-024-00185-6
 
 ## Code reference
-In main branch:  https://github.com/IMMM-SFA/naturf/tree/main
+In main branch:  https://github.com/IMMM-SFA/naturf
 
 Ingests shapefiles and turns them into inputs for WRF.
 Generated both 10 and 100-meter morphologies.
